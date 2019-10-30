@@ -17,7 +17,7 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.locustrunner",
+				"command": "extension.helloWorld",
 				"title": "Locust Runner"
 			}
 		]

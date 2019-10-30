@@ -14,7 +14,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('extension.locustrunner', async () => {
+	let disposable = vscode.commands.registerCommand('extension.helloWorld', async () => {
 		// The code you place here will be executed every time your command is executed
 		const locustPath = '/usr/local/bin/locust'
 		// Display a message box to the user
