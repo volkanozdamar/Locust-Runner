@@ -2,6 +2,8 @@
 
 ## Release Notes 
 
-This extension is still beta and for personal use .
+Run your locust tests easily.Now only works on Mac OS.
+
+
 
 Download from : https://marketplace.visualstudio.com/items?itemName=VolkanOzdamar.locust-runner
