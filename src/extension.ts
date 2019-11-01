@@ -1,6 +1,8 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import * as fs from 'fs';
+import * as path from 'path';
 import { QuickPickItem } from 'vscode';
 
 // this method is called when your extension is activated
@@ -18,9 +20,21 @@ export async function activate(context: vscode.ExtensionContext) {
 		// The code you place here will be executed every time your command is executed
 		const locustPath = '/usr/local/bin/locust'
 		// Display a message box to the user
-		const runnerType = await vscode.window.showQuickPick(['local', 'master','slave']);
+		var testFolder = vscode.workspace.rootPath+'/tests';
+		var testfiles:string[] = new Array();
+        fs.readdir(testFolder, (err, files) => {
+            files.forEach(files => {
+                testfiles.push(files);
+            });
+          }); 
+
+
+
+
+		const runnerType = await vscode.window.showQuickPick(['local', 'master[TBD]','slave[TBD]']);
+		const testfile = await vscode.window.showQuickPick(testfiles);
 		// Test File Location
-		const fileLocation =  await vscode.window.showInputBox({value: 'tests/',placeHolder: 'FileLocation'});
+		const fileLocation =  'tests/'+testfile
 
 		const platform = await vscode.window.showInputBox({value: 'stage',placeHolder: 'Select where do you want to run your test?'});
 		//await vscode.window.showInformationMessage('Your Test is Running '+input);
