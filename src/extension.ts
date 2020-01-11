@@ -31,7 +31,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
 
 
-	let disposable = vscode.commands.registerCommand('extension.ozdamar', async () => {
+	let disposable = vscode.commands.registerCommand('extension.helloWorld', async () => {
 		const locustPath = '/usr/local/bin/locust'
 		// Display a message box to the user
 		var testFolder = vscode.workspace.rootPath+'/tests';
@@ -65,7 +65,7 @@ export async function activate(context: vscode.ExtensionContext) {
 		}
 		wait(4000)
 		await cterminal.sendText('/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome "http://localhost:8089"');
-		await vscode.window.showInformationMessage('Chrome Browser is UP');
+		await vscode.window.showInformationMessage('Chrome Browser is Up');
 	});
 
 	context.subscriptions.push(disposable);
