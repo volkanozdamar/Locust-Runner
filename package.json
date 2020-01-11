@@ -2,7 +2,7 @@
 	"name": "locust-runner",
 	"displayName": "Locust Runner",
 	"description": "Run your Locust Scripts Easily",
-	"version": "0.8.0",
+	"version": "0.9.0",
 	"icon": "images/image.png",
 	"publisher": "VolkanOzdamar",
 	"engines": {
