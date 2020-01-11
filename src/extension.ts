@@ -63,7 +63,7 @@ export async function activate(context: vscode.ExtensionContext) {
 			await terminal.sendText(locustPath+' -f '+' --host='+platform+' --master-host='+hostIp+' --master-port='+port);
 			await terminal.show();
 		}
-		wait(4000)
+		wait(5000)
 		await cterminal.sendText('/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome "http://localhost:8089"');
 		await vscode.window.showInformationMessage('Chrome Browser is Up');
 	});
