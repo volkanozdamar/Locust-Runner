@@ -16,6 +16,7 @@ To use press __SHIFT+COMMAND+P__ and select __'Locust Runner'__
 
 Download from : https://marketplace.visualstudio.com/items?itemName=VolkanOzdamar.locust-runner
 
+Source : https://github.com/volkanozdamar/Locust-Runner 
 
 ## Release Notes 
 ####locust-runner@0.12.0 
